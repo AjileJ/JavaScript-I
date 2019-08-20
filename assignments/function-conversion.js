@@ -3,13 +3,7 @@
 // let myFunction = function() {
 // console.log("Function was invoked!");
 // };
-// function myFunction() {
-//   console.log("Function was invoked!");
-// };
-// myFunction = () => {
-//   console.log("Function was invoked!");
-// }
-// myFunction();
+
 
 myFunction = ()=> console.log("Function was invoked!");
 

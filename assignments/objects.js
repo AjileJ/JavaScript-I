@@ -40,33 +40,33 @@
 // //   gender:"M",
 // // }
 
-// function Interns(id, name, email, gender){
-//   this.id = id;
-//   this.name = name;
-//   this.email = email;
-//   this.gender = gender;
-// }
+function Interns(id, name, email, gender){
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  this.gender = gender;
+}
 
-// let mitzi = new Interns(1, "Mitzi", "mmelloy0@psu.edu", "F" )
-// let kennan = new Interns(2,"Kennan", "kdiben1@tinypic.com", "M")
-// let kevin = new Interns(3, "Kevin", "kmummery2@wikimedia.org", "M")
-// let gannie = new Interns(4, "Gannie","gmartinson3@illinois.edu", "M" )
-// let antonietta = new Interns(5, "Antonietta", "adaine5@samsung.com", "F")
+let mitzi = new Interns(1, "Mitzi", "mmelloy0@psu.edu", "F" )
+let kennan = new Interns(2,"Kennan", "kdiben1@tinypic.com", "M")
+let kevin = new Interns(3, "Kevin", "kmummery2@wikimedia.org", "M")
+let gannie = new Interns(4, "Gannie","gmartinson3@illinois.edu", "M" )
+let antonietta = new Interns(5, "Antonietta", "adaine5@samsung.com", "F")
 
 
 // // ==== Challenge 2: Reading Object Data ==== 
 // // Once your objects are created, log out the following requests from HR into the console:
 
 // // Mitzi's name
-// console.log(mitzi.name);
+console.log(mitzi.name);
 // // Kennan's ID
-// console.log(kennan.id);
+console.log(kennan.id);
 // // Keven's email
-// console.log(kevin.email);
+console.log(kevin.email);
 // // Gannie's name
-// console.log(Gannie.name);
+console.log(Gannie.name);
 // // Antonietta's Gender
-// console.log(Antonietta.gender);
+console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
@@ -78,10 +78,10 @@
 // console.log(kennan.speak());
 
 
-// function speak(name){
-//   console.log("hello my name is " + name + "!");
-// }
-// speak("kennan");
+function speak(name){
+  console.log("hello my name is " + name + "!");
+}
+speak("kennan");
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
