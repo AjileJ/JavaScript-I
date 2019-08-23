@@ -1,14 +1,21 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
-// let myFunction = function () {
+// let myFunction = function() {
 // console.log("Function was invoked!");
 // };
-// myFunction();
+
+
+myFunction = ()=> console.log("Function was invoked!");
+
+myFunction();
 
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+
+   anotherFunction = (param)=> param;
+   console.log(anotherFunction('Example'));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -19,6 +26,10 @@
 //   return param1 - param2;
 // };
 // subtract(1,2);
+
+subtract = (param1, param2) => param1 - param2;
+console.log(subtract(1,2));
+
 
 
 // Stretch

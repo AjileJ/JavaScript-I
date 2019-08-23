@@ -1,44 +1,96 @@
-// Let's get some practice writing a few objects for a new group of interns at a small business.
+// // Let's get some practice writing a few objects for a new group of interns at a small business.
 
-// ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// // ==== Challenge 1: Writing Objects ==== 
+// // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
-// 1, mmelloy0@psu.edu, Mitzi, F
-// 2, kdiben1@tinypic.com, Kennan, M
-// 3, kmummery2@wikimedia.org, Keven, M
-// 4, gmartinson3@illinois.edu, Gannie, M
-// 5, adaine5@samsung.com, Antonietta, F
+// // 1, mmelloy0@psu.edu, Mitzi, F
+// // 2, kdiben1@tinypic.com, Kennan, M
+// // 3, kmummery2@wikimedia.org, Keven, M
+// // 4, gmartinson3@illinois.edu, Gannie, M
+// // 5, adaine5@samsung.com, Antonietta, F
 
-// Example format of an intern object: 1, examples@you.edu, Example, F
-const example = {
-  id: 0,
-  name: "Example",
-  email: "examples@you.edu",
-  gender: "F",
+// // Example format of an intern object: 1, examples@you.edu, Example, F
+// const example = {
+//   id: 0,
+//   name: "Example",
+//   email: "examples@you.edu",
+//   gender: "F",
+// }
+
+// const mitzi = {
+//   id: 1,
+//   name: "Mitzi",
+//   email: "mmelloy0@psu.edu",
+//   gender:"F",
+// }
+
+// // Write your intern objects here:
+
+// // const mitzi = {
+// //   id: 1,
+// //   name: "mitzi",
+// //   email: "mmelloy0@psu.edu",
+// //   gender:"F",
+// // }
+
+// // const kennan = {
+// //   id: 2,
+// //   name: "Kennan",
+// //   email: "kdiben1@tinypic.com",
+// //   gender:"M",
+// // }
+
+function Interns(id, name, email, gender){
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  this.gender = gender;
 }
 
-// Write your intern objects here:
+let mitzi = new Interns(1, "Mitzi", "mmelloy0@psu.edu", "F" )
+let kennan = new Interns(2,"Kennan", "kdiben1@tinypic.com", "M")
+let kevin = new Interns(3, "Kevin", "kmummery2@wikimedia.org", "M")
+let gannie = new Interns(4, "Gannie","gmartinson3@illinois.edu", "M" )
+let antonietta = new Interns(5, "Antonietta", "adaine5@samsung.com", "F")
 
 
-// ==== Challenge 2: Reading Object Data ==== 
-// Once your objects are created, log out the following requests from HR into the console:
+// // ==== Challenge 2: Reading Object Data ==== 
+// // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
-
-// Kennan's ID
-
-// Keven's email
-
-// Gannie's name
-
-// Antonietta's Gender
-
+// // Mitzi's name
+console.log(mitzi.name);
+// // Kennan's ID
+console.log(kennan.id);
+// // Keven's email
+console.log(kevin.email);
+// // Gannie's name
+console.log(Gannie.name);
+// // Antonietta's Gender
+console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+// function speak(){
+//   return `Hello my name is Kennan`;
+// }
+// kennan.speak = speak;
+// console.log(kennan.speak());
+
+
+function speak(name){
+  console.log("hello my name is " + name + "!");
+}
+speak("kennan");
+
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+ multiplyNums= (num1,num2)=>num1 * num2;
+ antonietta.multiplyNums = multiplyNums;
+console.log(antonietta.multiplyNums(3,4));
+
+
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
@@ -49,7 +101,7 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+// const parent = {}
 
 // Log the parent object's name
 
